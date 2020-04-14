@@ -1,0 +1,49 @@
+.Input-page {
+    padding-top: 15rem;
+    
+    &__main {
+        background-image: url(../img/page-background.svg);
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+
+        &-text {
+
+            margin: 0 auto;
+            padding-top: 15rem;
+            animation: moveInLeft 3s ease-in;
+        }
+
+    }
+
+    &__sub {
+        margin-top: 6rem;
+    }
+
+    &__image {
+        position: relative;
+
+
+        &-img {
+            position: fixed;
+            top: 1%;
+            right: 1%;
+            max-width: 5rem;
+
+            &:hover {
+                animation: shake 2s ease-in;
+            }
+        }
+    }
+}
+
+main {
+    padding: 6rem;
+}
+
+.Result-page {
+    //display:none;
+    //padding:1rem;
+    padding-top: 15rem;
+}

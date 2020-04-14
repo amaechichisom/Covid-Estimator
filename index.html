@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+            <link rel="stylesheet" href="css/icon-font.css">
+            <link rel="stylesheet" href="sass/main.css">
+            <link rel="shortcut icon" type="image/png" href="img/Dev-Godfrey.svg">
+            
+            <title>Dev Godfrey SDG Coivd-19 Estimator</title>
+        </head>
+    <body>
+        <header class="header">
+            <div class="header__primary">
+                <h5 class="heading__primary">
+                    Covid-19 Africa
+                </h5>
+            </div>
+            <div class="header__secondary">
+                <h2 class="heading__secondary">
+                    <span class="heading__secondary--main">Keep</span> 
+                    <span class="heading__secondary--sub">distance</span>
+                </h2>
+            </div>
+            
+
+            <a href="#Input-page" class="scroll-up">
+                <span class="left-bar"></span>
+                <span class="right-bar"></span> 
+                <svg width="40" height="40">
+                    <line class="top" x1="0" y1="0" x2="120" y2="0"/>
+                    <line class="left" x1="0" y1="40" x2="0" y2="-80"/>
+                    <line class="bottom" x1="40" y1="40" x2="-80" y2="40"/>
+                    <line class="right" x1="40" y1="0" x2="40" y2="1200"/>
+                </svg>
+            </a>
+            </div>
+            
+        </header>
+        
+
+        <main>
+
+            <section class="Input-page" id="Input-page">
+                <div class="Input-page__image">
+                    <img src="img/Dev-Godfrey.svg" class="Input-page__image-img">
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="Input-page__main">
+                            <div class="Input-page__main-text heading__tertiary">
+                                covid-9 estimator check
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class=" Input-page__sub">
+                            <div class="form">
+                            <div class="row">
+                                <div class="col-1-of-2">
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="population" class="form__label">Population</label>
+                                        <input type="number" class="form__input" placeholder="0 " id="population" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="timeToElapse" class="form__label">Predicted time to elapse</label>
+                                        <input type="number" class="form__input" placeholder="0" id="timeToElapse" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="reportedCases" class="form__label">Reported Cases</label>
+                                        <input type="number" class="form__input" placeholder="0" id="reportedCases" required>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-1-of-2">
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="totalHospitalBeds" class="form__label">Total Hospital Beds</label>
+                                        <input type="number" class="form__input" placeholder="0" id="totalHospitalBeds" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="periodType" class="form__label">periodType</label>
+                                        <select class="form__inputs"  >
+                                            <option>days</option>
+                                            <option>months</option>
+                                            <option>years</option>
+                                        </select>
+                                        
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="populationincome" class="form__label">Population Daily Income</label>
+                                        <input type="number" class="form__input" placeholder="0" id="populationincome" required>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="btn btn--yellow btn--animated">Check the statistics</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="Result-page">
+                <div class="Input-page__image">
+                    <img src="img/Dev-Godfrey.svg" class="Input-page__image-img">
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="Input-page__main">
+                            <div class="Input-page__main-text heading__primary-sub">
+                                covid-9 has a high recovery rate <br/>
+                                <span>Don't<span class="heading__secondary">Fret!</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class=" Input-page__sub">
+                            <div class="form">
+                            <div class="row">
+                                <div class="col-1-of-2">
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="Currentlyinfected" class="form__labels">Current cases of infected</label>
+                                        <input type="number" class="form__inputs" placeholder="0 " id="Currentlyinfected" required>
+                                        <label for="Severeinfected" class="form__labels">Severe cases of infected</label>
+                                        <input type="number" class="form__inputs" placeholder="0 " id="Severeinfected" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="currentInfections" class="form__labels">Infections by requested time</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="currentInfections" required>
+                                        <label for="severeInfections" class="form__labels"> Severe Infections by requested time</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeInfections" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="Cases" class="form__labels">Cases in need of care</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="Cases" required>
+                                        <label for="severeCases" class="form__labels">Severe Cases in need of care</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeCases" required>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-1-of-2">
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="availableHospitalBeds" class="form__labels">Available HospitalBeds</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="availableHospitalBeds" required>
+                                        <label for="availableHospitalBeds" class="form__labels">Available HospitalBeds in severe case</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="availableHospitalBeds" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="ICUpatients" class="form__labels">ICU patients</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="ICUpatients" required>
+                                        <label for="ICUpatients" class="form__labels">ICU patients in severe cases</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="ICUpatients" required>
+                                    </div>
+
+                                    <div class="form__group u-margin-bottom-medium">
+                                        <label for="ventilatorPatient" class="form__labels">Ventilator Patients</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="ventilatorPatient" required>
+                                        <label for="ventilatorPatient" class="form__labels">Ventilator Patients in severe cases</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="ventilatorPatient" required>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="btn btn--yellow btn--animated">New statistics</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    
+
+        <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4" >
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+                
+            </div>
+
+            
+
+        </section>
+    -->
+
+
+
+
+        
+    </body>
+</html>

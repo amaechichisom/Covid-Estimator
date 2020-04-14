@@ -1,0 +1,140 @@
+.header {
+    height: 100vh;
+
+    background-image: url("../img/coronavirus.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    color: $color-white;
+    backface-visibility: hidden;
+
+    
+    &__primary{
+        position:absolute;
+        top:5%;
+        left:50%;
+        transform:translate(-50%,-50%);
+
+    }
+
+    &__secondary{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        
+    }
+}
+
+
+
+// Up Arrow 1
+
+.scroll-up {
+    height: 40px;
+    width: 40px;
+    display: block;
+    outline: 1px solid rgba(666, 666, 666, 0.08);
+    position: relative;
+    top: 90%;
+    left: 50%;
+    color: $color-primary;
+    cursor: pointer;
+    animation: moveInLeft 3s ease-in-out;
+    
+
+    // transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+    svg line {
+        stroke-width: 3;
+        stroke: $color-primary;
+        fill: none;
+        stroke-dasharray: 20;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+    &:hover svg line {
+        &.top {
+            -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+        }
+
+        &.bottom {
+            -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+        }
+
+        &.left {
+            -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+        }
+
+        &.right {
+            -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+        }
+    }
+}
+
+.scroll-up {
+    .left-bar {
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        top: 19px;
+        left: 5px;
+        width: 18px;
+        display: block;
+        transform: rotate(-45deg);
+
+        &:after {
+            content: "";
+            background-color: $color-primary;
+            width: 18px;
+            height: 3px;
+            display: block;
+            border-radius: 1px;
+            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+            transform-origin: right center;
+            z-index: -1;
+        }
+    }
+
+    .right-bar {
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        top: 19px;
+        left: 17px;
+        width: 18px;
+        display: block;
+        transform: rotate(45deg);
+        border-radius: 2px;
+
+        &:after {
+            content: "";
+            background-color: $color-primary;
+            width: 18px;
+            height: 3px;
+            display: block;
+            border-radius: 1px;
+            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+            transform-origin: left center;
+            z-index: -1;
+        }
+    }
+
+    &:hover {
+        transition: all 0.1s;
+
+        .left-bar:after {
+            transform: rotate(-10deg);
+        }
+
+        .right-bar:after {
+            transform: rotate(10deg);
+        }
+    }
+}
+
+// /Up Arrow 1

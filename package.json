@@ -1,0 +1,22 @@
+{
+  "name": "sdg-covid-estimator",
+  "version": "1.0.0",
+  "description": "SDG covid-estimator project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "covi",
+    "estimator"
+  ],
+  "author": "Amaechi Chisom Godfrey",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
