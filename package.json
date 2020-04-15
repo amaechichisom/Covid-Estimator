@@ -8,7 +8,10 @@
     "start": "node index.js"
   },
   "keywords": [
-    "covi",
+    "covid",
+    "19",
+    "covid 19 estimator",
+    "cornavirus",
     "estimator"
   ],
   "author": "Amaechi Chisom Godfrey",

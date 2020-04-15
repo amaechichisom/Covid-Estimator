@@ -51,7 +51,14 @@
         &:focus:invalid {
             border-bottom: 3px solid #BC3908;
         }
+        @include respond(big-desktop){
+            padding:0;
+            padding-right:1rem;
+        }
 
+    }
+    &__space{
+        margin:0px auto;
     }
 
 

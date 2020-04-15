@@ -246,6 +246,12 @@ body {
           animation: moveInBottom 4s ease-in;
 }
 
+@media (max-width: 112.5em) {
+  .heading__secondary {
+    font-size: 10.4rem;
+  }
+}
+
 .heading__tertiary {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -256,6 +262,12 @@ body {
   line-height: 1.6;
   text-transform: uppercase;
   text-shadow: 0px 0.7rem 2.1rem rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 112.5em) {
+  .heading__tertiary {
+    font-size: 7.1rem;
+  }
 }
 
 .u-center-text {
@@ -376,6 +388,12 @@ body {
   color: #fff;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+@media (max-width: 37.5em) {
+  .header {
+    width: 73rem;
+  }
 }
 
 .header__primary {
@@ -559,6 +577,17 @@ body {
   border-bottom: 3px solid #BC3908;
 }
 
+@media (max-width: 112.5em) {
+  .form__inputs {
+    padding: 0;
+    padding-right: 1rem;
+  }
+}
+
+.form__space {
+  margin: 0px auto;
+}
+
 .form__label {
   font-size: 1.5rem;
   font-family: inherit;
@@ -692,16 +721,34 @@ body {
 .Input-page__main {
   background-image: url(../img/page-background.svg);
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   position: relative;
 }
 
+@media (max-width: 56.25em) {
+  .Input-page__main {
+    width: 64rem;
+  }
+}
+
 .Input-page__main-text {
   margin: 0 auto;
-  padding-top: 15rem;
+  padding-top: 12rem;
   -webkit-animation: moveInLeft 3s ease-in;
           animation: moveInLeft 3s ease-in;
+}
+
+@media (max-width: 112.5em) {
+  .Input-page__main-text {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .Input-page__main-text {
+    padding-top: 8rem;
+  }
 }
 
 .Input-page__sub {

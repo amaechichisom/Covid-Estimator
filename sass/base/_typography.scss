@@ -41,6 +41,14 @@ body {
     text-shadow: 0px 0.7rem 2.1rem rgba(0, 0, 0, 0.75);
     animation: moveInBottom 4s ease-in;
 
+    @include respond(big-desktop){
+        font-size:10.4rem;
+    }
+    @include respond(tabport){
+        font-size:8.4rem;
+        
+    }
+
     //     &--main{
     //         animation: moveInLeft 2s ease-in;
     //     }
@@ -58,5 +66,13 @@ body {
     line-height: 1.6;
     text-transform: uppercase;
     text-shadow: 0px 0.7rem 2.1rem rgba(0, 0, 0, 0.75);
+
+    @include respond(big-desktop){
+        font-size:7.1rem;
+    }
+
+    @include respond(tabport){
+        font-size:7.4rem;
+    }
 
 }
