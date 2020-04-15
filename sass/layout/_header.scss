@@ -7,9 +7,11 @@
     position: relative;
     color: $color-white;
     backface-visibility: hidden;
+
+    
     @include respond(phone){
             
-        width:73rem;
+        width:53rem;
     }
     
     &__primary{

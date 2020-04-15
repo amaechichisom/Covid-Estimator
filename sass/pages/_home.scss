@@ -13,6 +13,10 @@
             
             width:64rem;
         }
+        @include respond(phone){
+            
+            width:44rem;
+        }
 
         &-text {
 
