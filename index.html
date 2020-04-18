@@ -4,7 +4,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
-            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+            <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
 
             <link rel="stylesheet" href="css/icon-font.css">
             <link rel="stylesheet" href="sass/main.css">
@@ -63,7 +63,7 @@
                                 <div class="col-1-of-2">
                                     <div class="form__group u-margin-bottom-medium">
                                         <label for="population" class="form__label">Population</label>
-                                        <input type="number" class="form__input" placeholder="0 " id="population" required>
+                                        <input type="number" class="form__input" placeholder="0 " id="population"  required>
                                     </div>
 
                                     <div class="form__group u-margin-bottom-medium">
@@ -85,7 +85,7 @@
 
                                     <div class="form__group u-margin-bottom-medium">
                                         <label for="periodType" class="form__label">periodType</label>
-                                        <select class="form__inputs"  >
+                                        <select class="form__input"  id="period">
                                             <option>days</option>
                                             <option>months</option>
                                             <option>years</option>
@@ -100,7 +100,7 @@
                                 </div>
                                 
                             </div>
-                            <a href="#Result-page" class="btn btn--yellow btn--animated">Check the statistics</a>
+                            <a href="#Result-page" class="btn btn--yellow btn--animated" onclick="button1()">Check the statistics</a>
                         </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
             </section>
 
 
-            <section class="Result-page">
+            <section class="Result-page" id="Result-page">
                 <div class="Input-page__image">
                     <img src="img/Dev-Godfrey.svg" class="Input-page__image-img">
                 </div>
@@ -116,7 +116,7 @@
                     <div class="col-1-of-2">
                         <div class="Input-page__main">
                             <div class="Input-page__main-text heading__primary-sub">
-                                covid-9 has a high recovery rate <br/>
+                                covid-19 has a high recovery rate <br/>
                                 <span>Don't<span class="heading__secondary">Fret!</span></span>
                             </div>
                         </div>
@@ -128,55 +128,55 @@
                                 <div class="col-1-of-2">
                                     <div class="form__group u-margin-bottom-medium">
                                         <div class="form__space">
-                                        <label for="Currentlyinfected" class="form__labels">Current cases of infected</label>
-                                        <input type="number" class="form__inputs" placeholder="0 " id="Currentlyinfected" required>
-                                        <label for="Severeinfected" class="form__labels">Severe cases of infected</label>
-                                        <input type="number" class="form__inputs" placeholder="0 " id="Severeinfected" required>
+                                        <label for="Currentlyinfected" class="form__labels">Best case: Cases of infected</label>
+                                        <input type="number" class="form__inputs" placeholder="0 " id="Currentlyinfected" readonly>
+                                        <label for="Severeinfected" class="form__labels">Severe case: Cases of infected</label>
+                                        <input type="number" class="form__inputs" placeholder="0 " id="Severeinfected" readonly>
                                     </div>
                                     </div>
 
                                     <div class="form__group u-margin-bottom-medium">
-                                        <label for="currentInfections" class="form__labels">Infections by requested time</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="currentInfections" required>
-                                        <label for="severeInfections" class="form__labels"> Severe Infections by requested time</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="severeInfections" required>
+                                        <label for="currentInfections" class="form__labels">Best case: Cases by requested time</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="currentInfections" readonly>
+                                        <label for="severeInfections" class="form__labels">Severe case: Cases by requested time</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeInfections" readonly>
                                     </div>
 
                                     <div class="form__group u-margin-bottom-medium">
-                                        <label for="Cases" class="form__labels">Cases in need of care</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="Cases" required>
-                                        <label for="severeCases" class="form__labels">Severe Cases in need of care</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="severeCases" required>
+                                        <label for="Cases" class="form__labels">Best case: patients in care </label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="currentCases" readonly>
+                                        <label for="severeCases" class="form__labels">Severe Case: patients in care</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeCases" readonly>
                                     </div>
                                     
                                 </div>
                                 <div class="col-1-of-2">
                                     <div class="form__group u-margin-bottom-medium">
-                                        <label for="availableHospitalBeds" class="form__labels">Available HospitalBeds</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="availableHospitalBeds" required>
-                                        <label for="availableHospitalBeds" class="form__labels">Available HospitalBeds in severe case</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="availableHospitalBeds" required>
+                                        <label for="availableHospitalBeds" class="form__labels">Best case: Available hospital beds</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="currentHospitalBeds" readonly>
+                                        <label for="availableHospitalBeds" class="form__labels">Severe case: Available hospital beds</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeHospitalBeds" readonly>
                                     </div>
 
                                     <div class="form__group u-margin-bottom-medium">
                                         <div class="form__space">
-                                        <label for="ICUpatients" class="form__labels">ICU patients</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="ICUpatients" required>
-                                        <label for="ICUpatients" class="form__labels">ICU patients in severe cases</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="ICUpatients" required>
+                                        <label for="ICUpatients" class="form__labels">Best case: ICU patients</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="currentICUpatients" readonly>
+                                        <label for="ICUpatients" class="form__labels">Severe case: ICU patients</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeICUpatients" readonly>
                                     </div>
                                     </div>
 
                                     <div class="form__group u-margin-bottom-medium">
-                                        <label for="ventilatorPatient" class="form__labels">Ventilator Patients</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="ventilatorPatient" required>
-                                        <label for="ventilatorPatient" class="form__labels">Ventilator Patients in severe cases</label>
-                                        <input type="number" class="form__inputs" placeholder="0" id="ventilatorPatient" required>
+                                        <label for="ventilatorPatient" class="form__labels">Best case: Ventilator patients</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="currentventilatorPatient" readonly>
+                                        <label for="ventilatorPatient" class="form__labels">Severe case: Ventilator patients</label>
+                                        <input type="number" class="form__inputs" placeholder="0" id="severeventilatorPatient" readonly>
                                     </div>
                                 </div>
                                 
                             </div>
-                            <a href="#" class="btn btn--yellow btn--animated">New statistics</a>
+                            <a href="#Input-page" class="btn btn--yellow btn--animated" onclick="button2();" id="newstatistics">New statistics</a>
                         </div>
                         </div>
                     </div>
@@ -261,9 +261,9 @@
         </section>
     -->
 
+    
 
-
-
-        
+    
     </body>
+    <script src="app.js"></script>
 </html>

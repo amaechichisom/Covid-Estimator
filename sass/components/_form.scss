@@ -12,7 +12,7 @@
 
     &__input {
         font-family: inherit;
-        font-size: 2rem;
+        font-size: 3rem;
         display: block;
         border: none;
         border-radius: 2px;
@@ -33,11 +33,11 @@
     }
     &__inputs {
         font-family: inherit;
-        font-size: 2rem;
+        font-size: 2.5rem;
         display: block;
         border: none;
         border-radius: 2px;
-        padding:1rem;
+        //padding:1rem;
         margin-left: 1rem;
         border-bottom: 3px solid transparent;
         width: 90%;
@@ -63,14 +63,14 @@
 
 
     &__label {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: inherit;
         display: block;
         margin: 1rem;
 
     }
     &__labels{
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: inherit;
         display: block;
         margin-left: 1rem;

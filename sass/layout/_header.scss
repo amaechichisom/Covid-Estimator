@@ -9,9 +9,13 @@
     backface-visibility: hidden;
 
     
-    @include respond(phone){
+    // @include respond(phone){
             
-        width:53rem;
+    //     width:53rem;
+    // }
+
+    @include respond(phone){
+        width:74.5rem;
     }
     
     &__primary{

@@ -392,7 +392,7 @@ body {
 
 @media (max-width: 37.5em) {
   .header {
-    width: 53rem;
+    width: 74.5rem;
   }
 }
 
@@ -535,7 +535,7 @@ body {
 
 .form__input {
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 3rem;
   display: block;
   border: none;
   border-radius: 2px;
@@ -557,11 +557,10 @@ body {
 
 .form__inputs {
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: block;
   border: none;
   border-radius: 2px;
-  padding: 1rem;
   margin-left: 1rem;
   border-bottom: 3px solid transparent;
   width: 90%;
@@ -589,14 +588,14 @@ body {
 }
 
 .form__label {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: inherit;
   display: block;
   margin: 1rem;
 }
 
 .form__labels {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: inherit;
   display: block;
   margin-left: 1rem;
@@ -729,12 +728,14 @@ body {
 @media (max-width: 56.25em) {
   .Input-page__main {
     width: 64rem;
+    margin-left: -9rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .Input-page__main {
     width: 44rem;
+    margin-left: 0rem;
   }
 }
 
@@ -781,7 +782,14 @@ main {
   padding: 6rem;
 }
 
+@media (max-width: 56.25em) {
+  main {
+    padding: 0rem;
+  }
+}
+
 .Result-page {
+  display: none;
   padding-top: 15rem;
 }
 /*# sourceMappingURL=main.css.map */
