@@ -1,6 +1,6 @@
 .header {
     height: 100vh;
-
+    margin:0;
     background-image: url("../img/coronavirus.jpg");
     background-size: cover;
     background-position: top;
@@ -15,7 +15,7 @@
     // }
 
     @include respond(phone){
-        width:74.5rem;
+        //width:73.5rem;
     }
     
     &__primary{

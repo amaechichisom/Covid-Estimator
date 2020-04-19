@@ -252,6 +252,12 @@ body {
   }
 }
 
+@media (max-width: 56.25em) {
+  .heading__secondary {
+    font-size: 8.4rem;
+  }
+}
+
 .heading__tertiary {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -381,6 +387,7 @@ body {
 
 .header {
   height: 100vh;
+  margin: 0;
   background-image: url("../img/coronavirus.jpg");
   background-size: cover;
   background-position: top;
@@ -388,12 +395,6 @@ body {
   color: #fff;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-}
-
-@media (max-width: 37.5em) {
-  .header {
-    width: 74.5rem;
-  }
 }
 
 .header__primary {
@@ -746,15 +747,9 @@ body {
           animation: moveInLeft 3s ease-in;
 }
 
-@media (max-width: 112.5em) {
-  .Input-page__main-text {
-    padding: 3rem;
-  }
-}
-
 @media (max-width: 56.25em) {
   .Input-page__main-text {
-    padding-top: 8rem;
+    padding-top: 6rem;
   }
 }
 

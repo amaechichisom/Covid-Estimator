@@ -29,12 +29,12 @@
 
             @include respond(big-desktop){
 
-                padding:3rem;
+                //padding:3rem;
             }
 
             @include respond(tab-port){
-                padding-top:8rem;
-                //padding:3rem;
+                padding-top:6rem;
+                //margin-left:2rem;
             }
         }
 

@@ -134,7 +134,7 @@ function button1() {
     document.getElementById("severeICUpatients").value = severeICUCases();
 
     document.getElementById("currentventilatorPatient").value = currentVentilatorPatients();
-    document.getElementById("severeventilatorPatient").value = parseInt(0.02*severe);
+    document.getElementById("severeventilatorPatient").value = severeVentilatorPatients();
 
     console.log(severe);
 
