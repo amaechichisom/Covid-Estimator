@@ -17,7 +17,7 @@
   "author": "Amaechi Chisom Godfrey",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "express": "^4.17.1"
